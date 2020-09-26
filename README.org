@@ -2,6 +2,10 @@
 
 /A Personal Cloud/
 
+* Notice
+  This is just ripped from [[https://github.com/nextcloud/docker][nextcloud's official docker image]]. I'll be adding
+  more stuff to it soon, but I'm migrating from my old snap based setup and I'm
+  taking it slow.
 * What's included?
   Basically just nextcloud right now
 * How's it work?
