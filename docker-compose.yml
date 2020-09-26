@@ -2,10 +2,13 @@ version: '3'
 
 services:
   db:
-    image: postgres:alpine
+    image: mariadb
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
     volumes:
-      - db:/var/lib/postgresql/data
+      - db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=
     env_file:
       - db.env
 
@@ -15,7 +18,7 @@ services:
     volumes:
       - nextcloud:/var/www/html
     environment:
-      - POSTGRES_HOST=db
+      - MYSQL_HOST=db
     env_file:
       - db.env
     depends_on:
