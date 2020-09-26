@@ -1,0 +1,10 @@
+#+title: Homebase
+
+/A Personal Cloud/
+
+* What's included?
+  Basically just nextcloud right now
+* How's it work?
+  all in due time...
+* How do I set up
+  When you are ready, I shall share the secrets
